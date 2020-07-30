@@ -1,4 +1,5 @@
 import twitter
+from os import environ
 
 def getApi():
 	return twitter.Api(consumer_key=environ['CONSUMER_KEY'], 
