@@ -37,6 +37,7 @@ characters = [
 	{'name': 'Wired Beck', 'image': 'wired_beck.png'},
 	{'name': 'Straits (Battle Tendency)', 'image': 'straits_vampire.png'},
 	{'name': 'Donovan', 'image': 'donovan.jpg'},
+	# Part 3: Stardust Crusaders
 ]
 
 def postStatus(update):
