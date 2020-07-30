@@ -1,6 +1,7 @@
 from config import getApi
 import os
 import random
+from os import environ
 
 api = getApi()
 characters = [
