@@ -189,9 +189,9 @@ def createMatchUp():
 	second_character = random.randint(0, len(characters) - 1)
 	while first_character == second_character:
 		second_character = random.randint(0, len(characters) - 1)
-	post_text = characters[first_character]['name'] + ' VS ' + characters[second_character]['name'], 'characters/' + characters[first_character]['image'], 'characters/' + characters[second_character]['image']
+	post_text = characters[first_character]['name'] + ' VS ' + characters[second_character]['name']
 	if characters[first_character]['part'] > 5 or characters[second_character]['part'] > 5:
 		post_text = post_text + ' #JoJoVSManga'
-	status = postMatchUp(post_text)
+	status = postMatchUp(post_text, 'characters/' + characters[first_character]['image'], 'characters/' + characters[second_character]['image'])
 
 createMatchUp()
