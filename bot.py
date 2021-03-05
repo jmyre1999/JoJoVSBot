@@ -153,7 +153,7 @@ characters = [
 	{'name': 'Ermes Costello', 'image': 'ermes.png', 'part': 6},
 	{'name': 'Emporio Alnino', 'image': 'emporio.png', 'part': 6},
 	{'name': 'Weather Emporio', 'image': 'weather_emporio.png', 'part': 6},
-	{'name': 'Jotaro Kujo (Sone Ocean)', 'image': 'jotaro_kujo_so.jpg', 'part': 6},
+	{'name': 'Jotaro Kujo (Stone Ocean)', 'image': 'jotaro_kujo_so.jpg', 'part': 6},
 	{'name': 'Foo Fighters', 'image': 'foo_fighters.png', 'part': 6},
 	{'name': 'Narciso Anasui', 'image': 'anasui.jpg', 'part': 6},
 	{'name': 'Weather Report', 'image': 'weather_report.png', 'part': 6},
