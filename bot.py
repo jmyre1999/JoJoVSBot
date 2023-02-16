@@ -250,7 +250,11 @@ characters = [
 	{'name': 'Radio Gaga', 'image': 'radio_gaga.JPG', 'anime': False},
 	{'name': 'Flashback Man', 'image': 'flashback_man.JPG', 'anime': False},
 	{'name': 'Bling Baby', 'image': 'bling_baby.JPG', 'anime': False},
-	{'name': 'Pangea Land', 'image': 'pangea_land.JPG', 'anime': False},
+	{'name': 'Taoka', 'image': 'pangea_land.JPG', 'anime': False},
+	# The JoJoLands
+	{'name': 'Jodio Joestar', 'image': 'jodio.JPG', 'anime': False},
+	{'name': 'Dragona Joestar', 'image': 'dragona.JPG', 'anime': False},
+	{'name': 'Paco Lovelantes', 'image': 'paco.JPG', 'anime': False},
 ]
 
 def postStatus(update):
