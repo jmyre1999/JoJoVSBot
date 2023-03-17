@@ -255,6 +255,8 @@ characters = [
 	{'name': 'Jodio Joestar', 'image': 'jodio.JPG', 'anime': False},
 	{'name': 'Dragona Joestar', 'image': 'dragona.JPG', 'anime': False},
 	{'name': 'Paco Lovelantes', 'image': 'paco.JPG', 'anime': False},
+	{'name': 'Usagi Alohaoe', 'image': 'usagi.JPG', 'anime': False},
+	{'name': 'Meryl Mei Qi', 'image': 'meryl.JPG', 'anime': False},
 ]
 
 def postStatus(update):
