@@ -259,6 +259,8 @@ characters = [
 	{'name': 'Meryl Mei Qi', 'image': 'meryl.JPG', 'anime': False},
 ]
 
+goku = {'name': 'Goku', 'image': 'goku.PNG', 'anime': True}
+
 def postStatus(update):
 	status = api.PostUpdate(update)
 	print(status)
@@ -267,13 +269,16 @@ def postMatchUp(text, image1, image2):
 	api.PostUpdate(text, media=[image1, image2])
 
 def createMatchUp():
-	first_character = random.randint(0, len(characters) - 1)
-	second_character = random.randint(0, len(characters) - 1)
-	while first_character == second_character:
-		second_character = random.randint(0, len(characters) - 1)
-	post_text = characters[first_character]['name'] + ' VS ' + characters[second_character]['name']
-	if characters[first_character]['anime'] == False or characters[second_character]['anime'] == False:
+	is_first = bool(random.randint(0, 1))
+	if is_first:
+		first_character = goku
+		second_character = characters[random.randint(0, len(characters) - 1)]
+	else:
+		first_character = characters[random.randint(0, len(characters) - 1)]
+		second_character = goku
+	post_text = first_character['name'] + ' VS ' + second_character['name']
+	if first_character['anime'] == False or second_character['anime'] == False:
 		post_text = post_text + ' #JoJoVSManga'
-	status = postMatchUp(post_text, 'characters/' + characters[first_character]['image'], 'characters/' + characters[second_character]['image'])
+	status = postMatchUp(post_text, 'characters/' + first_character['image'], 'characters/' + second_character['image'])
 
 createMatchUp()
